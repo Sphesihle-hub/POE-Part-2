@@ -21,7 +21,6 @@ The purpose of this website project is to create a professional and user-friendl
 
 Part 1 focused mainly on planning the website, researching and organising content, creating the HTML structure and setting up the project files.
 
----
 
 ## 2. Website Goals and Objectives
 
@@ -34,7 +33,6 @@ The main goals of the Kwa-Mzilikazi website are to:
 * Provide clear contact and location information.
 * Create a strong foundation that can be improved with CSS and JavaScript in the later parts of the project.
 
----
 
 ## 3. Target Audience
 
@@ -47,7 +45,6 @@ The target audience for the website includes:
 * Customers interested in takeaway meals.
 * Customers interested in bulk food or meat bone purchases.
 
----
 
 ## 4. Website Pages
 
@@ -89,7 +86,6 @@ This page is intended to allow customers to make enquiries about the organisatio
 
 This page provides contact and location information so that customers can communicate with or visit Kwa-Mzilikazi.
 
----
 
 ## 5. File and Folder Structure
 
@@ -115,7 +111,6 @@ Mzilikazi Root/
 
 The HTML pages are stored in the main project folder, while CSS, JavaScript and image files are stored in separate folders.
 
----
 
 ## 6. HTML Structure
 
@@ -141,7 +136,6 @@ Other HTML elements used include:
 
 Comments were also added to the code to explain important sections of the website.
 
----
 
 ## 7. Navigation
 
@@ -159,7 +153,6 @@ Contact → contact.html
 
 The navigation allows visitors to move between the different pages of the website.
 
----
 
 ## 8. Content and Images
 
@@ -178,7 +171,6 @@ The website includes content relating to:
 
 Food and organisation images were placed inside the `images` folder and included in the relevant HTML pages.
 
----
 
 ## 9. SEO and Basic Accessibility
 
@@ -193,7 +185,6 @@ Each page contains:
 
 These features help search engines and users understand the purpose of each page.
 
----
 
 ## 10. Part 1 Development
 
@@ -213,7 +204,6 @@ The following work was completed:
 * Added basic SEO information.
 * Prepared the website structure for future CSS and JavaScript development.
 
----
 
 ## 11. Changes Made After the Initial Part 1 Version
 
@@ -249,7 +239,6 @@ The addition of the stylesheet includes preparation for:
 
 This change represents the beginning of the transition from the HTML foundation created in Part 1 to the CSS development required in Part 2.
 
----
 
 ## 12. Changelog
 
@@ -277,7 +266,6 @@ This change represents the beginning of the transition from the HTML foundation 
 * Added the foundation for consistent colours, typography, spacing and layouts.
 * Prepared the website for responsive desktop, tablet and mobile styling.
 
----
 
 ## 13. Future Development
 
@@ -304,20 +292,9 @@ Part 3 will focus on:
 * Form functionality.
 * Additional user interactions.
 
----
 
 ## 14. References
 
 References used for the website project will be maintained and updated throughout the development process.
 
 All external information, images and other resources used for the project will be acknowledged using the recognised referencing style required by the institution.
-
----
-
-## 15. GitHub Repository
-
-The project is maintained in a private GitHub repository.
-
-**Repository:** `Sphesihle-hub/POE-Part1`
-
-The repository will be updated regularly as new changes are made to the website.
