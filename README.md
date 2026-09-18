@@ -1,263 +1,106 @@
-PART 1: BUILDING THE FOUNDATION
-Project Title
+# Kwa-Mzilikazi Website Project
 
-Kwa-Mzilikazi Website
+## Student Information
+**Student Name:** Sphesihle Qwabe
+**Course:** Diploma in IT Management
+**Project:** Website Development POE
+**Current Phase:** Part 2 – Designing the Visuals: CSS Styling and Responsive Design
 
-Student Information
 
-Student Name: Sphesihle Qwabe
-Course: Diploma in IT Management
-Project: Website Development POE
-Part: Part 1 – Building the Foundation
+## 1. Project Overview
+Kwa-Mzilikazi is a fictional home-style eatery located at 43 Eloff Street in the Johannesburg CBD. The business serves affordable, authentic South African meals, meat bones, and refreshments for dine-in and takeaway customers. 
 
-1. Project Overview
+This project builds a professional, user-friendly website for the eatery. While Part 1 focused on establishing the HTML foundation, Part 2 focuses on advanced CSS styling, implementing a Zulu heritage-inspired design, and ensuring the website is fully responsive across all devices.
 
-Kwa-Mzilikazi is a fictional home-style eatery based at 43 Eloff Street in the Johannesburg CBD. The organisation provides affordable home-cooked South African meals, meat bones and refreshments for customers who want to dine in or take away.
 
-The purpose of this website project is to create a professional and user-friendly online presence for Kwa-Mzilikazi. The website provides customers with information about the eatery, its menu, enquiry options and contact details.
+## 2. Website Goals and Objectives
+The primary goals of the Kwa-Mzilikazi website are to:
+* **Inform:** Provide clear, accessible information about the menu, location, and business history.
+* **Engage:** Create a visually appealing, culturally inspired design that attracts and retains customers.
+* **Convert:** Make it easy for users to view the menu and submit enquiries for takeaway or bulk orders.
+* **Accessibility:** Ensure the website functions perfectly and looks professional on desktop, tablet, and mobile screens.
 
-Part 1 focused mainly on planning the website, researching and organising content, creating the HTML structure and setting up the project files.
 
-2. Website Goals and Objectives
+## 3. Key Features and Functionality
+* **Consistent Navigation:** A global header and footer are used across all five pages to ensure easy navigation.
+* **Zulu Heritage Design:** The site features a premium colour palette (terracotta, deep blue, and gold) paired with elegant typography to reflect the brand's identity.
+* **Responsive Layouts:** The website uses CSS Grid and Flexbox to adapt seamlessly from multi-column desktop layouts to single-column mobile layouts.
+* **Responsive Images:** The `<picture>` element and `srcset` attributes are used to optimise image loading for different screen sizes.
+* **Search Functionality:** A search bar is integrated into the header to help users quickly find menu items.
+* **Semantic HTML:** The site is built using proper HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>`) for better structure and SEO.
 
-The main goals of the Kwa-Mzilikazi website are to:
+---
 
-Increase awareness of the eatery and its services.
-Provide customers with easy access to the menu and prices.
-Allow visitors to learn more about Kwa-Mzilikazi.
-Make it easier for customers to send enquiries.
-Provide clear contact and location information.
-Create a strong foundation that can be improved with CSS and JavaScript in the later parts of the project.
-3. Target Audience
+## 4. Sitemap
+1. **Home** (`index.html`) – Features a hero section, business introduction, and a summary of offerings.
+2. **About Us** (`about.html`) – Details the organisation's story, mission, vision, and team.
+3. **Menu** (`menu.html`) – Displays food categories, prices, and high-quality images of the dishes.
+4. **Enquire** (`enquiry.html`) – Contains a form for customers to make enquiries about takeaway, catering, or bulk orders.
+5. **Contact** (`contact.html`) – Provides the physical address, trading hours, an embedded map, and a contact form.
 
-The target audience for the website includes:
 
-Johannesburg CBD workers.
-Students.
-Local residents.
-Customers looking for affordable home-cooked meals.
-Customers interested in takeaway meals.
-Customers interested in bulk food or meat bone purchases.
-4. Website Pages
+## 5. Part 2 Implementation Details (CSS & Responsive Design)
+To meet the Part 2 learning outcomes, the following design and development techniques were applied:
 
-The website contains a minimum of five pages as required by the project brief.
+**External Stylesheet & Base Styles**
+A single external `style.css` file was created and linked to all HTML pages. This ensures consistency across the website and takes advantage of the "cascading" nature of CSS to style elements efficiently. A global CSS reset was applied to ensure consistent styling across different web browsers, and default styles (font family, base font size, and colour scheme) were established using CSS variables.
 
-Home – index.html
+**Typography & Visual Styles**
+Google Fonts (`Playfair Display` for headings and `Montserrat` for body text) were imported to create a harmonious typography scale. Properties like `font-weight`, `line-height`, and `letter-spacing` were used to improve readability. Visual depth was added using `box-shadow`, `border-radius`, and decorative CSS beadwork borders. Interactive elements were enhanced using pseudo-classes like `:hover`, `:focus`, and `:active`.
 
-The home page introduces Kwa-Mzilikazi and contains:
+**Layout Structure**
+The website layout was structured using modern CSS techniques. **CSS Grid** (utilising `grid-template-areas`) was used to create a clean, complex header layout, while **Flexbox** (using `display: flex`, `justify-content`, and `align-items`) was used to align the navigation menu and centre content within cards. 
 
-A main hero section.
-A short introduction to the eatery.
-Information about what the organisation offers.
-A button linking visitors to the menu.
-About Us – about.html
+**Responsive Design & Relative Units**
+Relative units like `rem` were used for font sizes and spacing, while `%` and `max-width` were used for element widths to ensure the site scales smoothly. Key breakpoints were identified, and media queries (e.g., `@media (max-width: 768px)`) were implemented to switch the multi-column grid to a single-column layout on smaller screens. The navigation menu stacks vertically on mobile devices to improve the user experience.
 
-This page provides information about:
+## 6. Changelog
+This section tracks all changes made to the project, including detailed corrections based on Part 1 feedback and new developments for Part 2.
 
-The organisation's story.
-Its mission.
-Its vision.
-The people behind the food.
-Menu – menu.html
+**Version 1.0 – Initial Part 1 Setup**
+* Created the initial Kwa-Mzilikazi website project structure.
+* Developed the five required HTML pages (Home, About Us, Menu, Enquire, Contact).
+* Implemented the main navigation menu and homepage hero section.
+* Organised files into HTML, CSS, JavaScript, and image folders.
 
-This page presents the available food and refreshments, including:
+**Version 1.1 – Part 1 Feedback Corrections**
+* **Accessibility Improvements:** Added missing and descriptive `alt` attributes to all `<img>` tags to ensure the site is accessible to screen readers.
+* **Heading Hierarchy:** Fixed inconsistent heading levels by changing `<h4>` tags to `<h3>` in the About Us section to maintain a logical document outline.
+* **Form Accessibility:** Improved form usability by ensuring all `<input>` fields have correctly linked `<label>` tags with matching `for` and `id` attributes.
+* **Code Readability:** Corrected minor HTML indentation issues and added descriptive comments to explain complex sections of the code.
 
-Home-cooked meals.
-Meaty bones.
-Soft drinks.
-Bottled water.
-Prices and food images.
-Enquiry – enquiry.html
+**Version 1.2 – Part 2 CSS Foundation**
+* Created and linked the external `style.css` file to all HTML pages.
+* Implemented CSS variables to establish a Zulu heritage colour palette and typography scales.
+* Applied a global CSS reset to ensure cross-browser consistency.
 
-This page is intended to allow customers to make enquiries about the organisation's services, food and orders.
+**Version 1.3 – Part 2 Layout & Visual Styling**
+* Applied `grid-template-areas` to the header for a complex, clean layout, and CSS Grid to the menu section.
+* Added visual styling including `box-shadow`, `border-radius`, and decorative CSS beadwork borders to the header and footer.
+* Implemented interactive hover and focus states for navigation links and buttons.
 
-Contact – contact.html
+**Version 1.4 – Part 2 Responsive Design**
+* Added media queries for mobile and tablet breakpoints (max-width: 768px).
+* Modified the CSS Grid to switch to a single-column layout on smaller screens.
+* Adjusted font sizes using `rem` and made the search bar full-width using `%` for better mobile usability.
 
-This page provides contact and location information so that customers can communicate with or visit Kwa-Mzilikazi.
+**Version 1.5 – Responsive Images**
+* Updated standard `<img>` tags to use the `<picture>` element with `srcset` and `sizes` attributes. This optimises image loading by serving appropriate image resolutions based on the user's screen size.
 
-5. File and Folder Structure
 
-The project was organised using a clear folder structure.
+## 8. References
 
-Mzilikazi Root/
-│
-├── index.html
-├── about.html
-├── menu.html
-├── enquiry.html
-├── contact.html
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── main.js
-│
-└── images/
+Canva, 2026. Colour palette generator*. Available at: <https://www.canva.com/colors/color-palettes/>  [Accessed: 19 September 2026].
 
-The HTML pages are stored in the main project folder, while CSS, JavaScript and image files are stored in separate folders.
+freeCodeCamp, 2026. Learn CSS*. Available at: <https://www.freecodecamp.org/news/learn-css/>  [Accessed: 19 September 2026].
 
-6. HTML Structure
+Google, 2026. Google fonts*. Available at: <https://fonts.google.com/> (Accessed: 19 September 2026).
 
-The website was developed using HTML5.
+Google, 2026. *Responsive web design basics*. Available at: <https://web.dev/learn/design/> [Accessed: 19 September 2026].
 
-Semantic HTML elements were used to organise the pages, including:
+MDN Web Docs, 2026. *CSS flexbox*. Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout>  [Accessed: 19 September 2026].
 
-<header>
-<nav>
-<main>
-<section>
-<footer>
+MDN Web Docs, 2026. *CSS grid layout*. Available at: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout> [Accessed: 19 September 2026].
 
-Other HTML elements used include:
 
-Headings.
-Paragraphs.
-Images.
-Lists.
-Links.
-Forms.
-Buttons.
-
-Comments were also added to the code to explain important sections of the website.
-
-7. Navigation
-
-A consistent navigation menu was created and used across the website.
-
-The navigation links connect the following pages:
-
-Home → index.html
-About Us → about.html
-Menu → menu.html
-Enquire → enquiry.html
-Contact → contact.html
-
-The navigation allows visitors to move between the different pages of the website.
-
-8. Content and Images
-
-Content was created and organised to represent realistic information for the fictional Kwa-Mzilikazi organisation.
-
-The website includes content relating to:
-
-Home-cooked meals.
-Traditional South African food.
-Meat bones.
-Refreshments.
-The organisation's history.
-Mission and vision.
-Customer enquiries.
-Contact and location information.
-
-Food and organisation images were placed inside the images folder and included in the relevant HTML pages.
-
-9. SEO and Basic Accessibility
-
-Basic SEO practices were included in Part 1.
-
-Each page contains:
-
-A suitable <title>.
-A meta description.
-The lang="en" attribute.
-Alternative text (alt) for images where applicable.
-
-These features help search engines and users understand the purpose of each page.
-
-10. Part 1 Development
-
-Part 1 focused on establishing the foundation of the website.
-
-The following work was completed:
-
-Selected Kwa-Mzilikazi as the target organisation.
-Planned the purpose and target audience of the website.
-Created the required five-page website structure.
-Created the HTML pages.
-Added headings, paragraphs, images and links.
-Created a consistent navigation menu.
-Added realistic content for the fictional organisation.
-Organised files into HTML, CSS, JavaScript and image folders.
-Added comments to the HTML code.
-Added basic SEO information.
-Prepared the website structure for future CSS and JavaScript development.
-11. Changes Made After the Initial Part 1 Version
-
-The website has been updated as development continues into Part 2.
-
-CSS Stylesheet Added
-
-An external stylesheet was added to the project:
-
-css/styles.css
-
-The stylesheet is linked to the HTML pages using:
-
-<link rel="stylesheet" href="css/styles.css">
-
-The CSS file will be used to improve the visual design of the website and provide consistent styling across all pages.
-
-The addition of the stylesheet includes preparation for:
-
-Website colours.
-Typography.
-Spacing.
-Navigation styling.
-Layout styling.
-Buttons.
-Forms.
-Responsive design.
-Desktop, tablet and mobile layouts.
-
-This change represents the beginning of the transition from the HTML foundation created in Part 1 to the CSS development required in Part 2.
-
-12. Changelog
-Version 1.0 – Part 1
-Created the initial Kwa-Mzilikazi website project.
-Created the five required HTML pages.
-Added the main navigation menu.
-Added the homepage hero section and introductory content.
-Added the About Us page with the organisation's story, mission and vision.
-Added the Menu page with food, meat bones and refreshments.
-Added the Enquiry page.
-Added the Contact page.
-Added images and alternative text.
-Created the images, css and js folders.
-Added comments to improve code readability.
-Added page titles and meta descriptions.
-Created the initial project structure for GitHub.
-Version 1.1 – CSS Development
-Added the external stylesheet css/styles.css.
-Linked the stylesheet to the website pages.
-Started developing the visual styling of the website.
-Added the foundation for consistent colours, typography, spacing and layouts.
-Prepared the website for responsive desktop, tablet and mobile styling.
-13. Future Development
-
-The website will continue to be developed in the next parts of the project.
-
-Part 2
-
-Part 2 will focus on:
-
-CSS styling.
-Desktop design.
-Responsive design.
-Media queries.
-Breakpoints.
-Responsive images.
-Improved user experience.
-Part 3
-
-Part 3 will focus on:
-
-JavaScript functionality.
-Interactive website features.
-Form functionality.
-Additional user interactions.
-14. References
-
-References used for the website project will be maintained and updated throughout the development process.
-
-All external information, images and other resources used for the project will be acknowledged using the recognised referencing style required by the institution.
+*© 2026 Sphesihle Qwabe. All rights reserved.*
