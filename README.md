@@ -11,7 +11,6 @@
 **Project:** Website Development POE
 **Part:** Part 1 – Building the Foundation
 
----
 
 ## 1. Project Overview
 
