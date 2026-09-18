@@ -48,7 +48,14 @@
 
 <!-- Add the image as its own section between hero and intro -->
 <section class="hero-image">
-  <img src="images/Kwa Mzilikazi.jpg" alt="Kwa-Mzilikazi storefront">
+  <picture>
+    <!-- Mobile image (loads on screens smaller than 768px) -->
+    <source media="(max-width: 768px)" srcset="images/Kwa Mzilikazi.jpg">
+    <!-- Tablet image (loads on screens smaller than 1024px) -->
+    <source media="(max-width: 1024px)" srcset="images/Kwa Mzilikazi.jpg">
+    <!-- Default desktop image -->
+    <img src="images/Kwa Mzilikazi.jpg" alt="Kwa-Mzilikazi storefront in Johannesburg CBD" width="100%" height="auto">
+  </picture>
 </section>
 
 <section class="intro">
